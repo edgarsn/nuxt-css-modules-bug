@@ -1,9 +1,14 @@
 <template>
-  <Tutorial/>
+  <show-thumbnails/>
 </template>
 
 <script>
+import ShowThumbnails from "~/components/ShowThumbnails/ShowThumbnails";
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    ShowThumbnails
+  },
 }
 </script>

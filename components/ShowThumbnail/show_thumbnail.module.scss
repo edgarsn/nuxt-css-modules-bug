@@ -1,0 +1,16 @@
+@import '~assets/scss/variables';
+@import '~assets/scss/mixins';
+
+.show-thumbnail {
+  .title {
+    /* I want to use it as SCSS variable here. */
+    color: $brand-primary;
+  }
+
+  /* As well SCSS mixins. */
+  @include title-large();
+}
+
+/* Weirdly single line comments doesn't work here, but works in app.scss */
+
+/* // Uncomment block comment to see single line comment failing with error 'Unknown word'. */
