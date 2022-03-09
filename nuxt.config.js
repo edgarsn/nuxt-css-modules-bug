@@ -38,5 +38,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
+
+    loaders: {
+      cssModules: {
+        modules: {
+          localIdentName: "[local]--[hash:base64:4]",
+        }
+      }
+    },
   }
 }
